@@ -1,11 +1,16 @@
-# mj-gent/lab - README
+# mj-gent/UpdateScreenSaver3DText - README
 
-Personal scripts for fun and study. 
+This script will perform a registry edit that updates the text of the
+default Microsoft screen saver named '3D Text'.
+The text will be pulled from a .txt file that is formatted so that 
+PowerShell will interpret it as a list/array (delimiter == newline).
+No weight for selections, just Get-Random and an 'if' statement that will
+prevent the same choice from occurring twice in a row. 
+I separately used Windows Task Scheduler to automatically run this script daily.
 
-Scripts here are intended for neither large-scale nor monetized projects; for example,
-my first two contributions are: a Powershell script that randomizes the custom string 
-of the default "3D Text" screensaver based on a text file, and a Python script that 
-can encrypt/decrypt a silly cipher I designed. 
+WARNING: Windows '3D Text' screen saver innately has 20-character limit, and
+         will display "Windows 11" as a system default if exceeded. 
 
-I share these scripts for the curious to poke at, so do suggest a license if you feel 
-that the MIT License attribution is inappropriate.
+Not included in v1.0.0 upload of the script:
+* default .txt file
+* installer/.exe
